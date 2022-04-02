@@ -13,7 +13,7 @@ const breakpoints = createBreakpoints({
 const titleSharedStyles = {
     lineHeight: '80%',
     textTransform: 'uppercase',
-    fontWeight: 'black',
+    fontWeight: 900,
 };
 
 const theme = extendTheme({
@@ -31,16 +31,20 @@ const theme = extendTheme({
             },
         },
         text: {
-            l1: { fontSize: ['16px', null, '18px'] },
-            l2: { fontSize: ['12px', null, '14px'] },
+            l1: {
+                fontSize: ['16px', null, '18px'],
+                fontWeight: 'semibold',
+                lineHeight: '150%',
+            },
+            l2: {
+                fontSize: ['12px', null, '14px'],
+                fontWeight: 'semibold',
+                lineHeight: '150%',
+            },
         },
     },
     components: {
         Text: {
-            baseStyle: {
-                fontWeight: 'semibold',
-                lineHeight: '150%',
-            },
             variants: {
                 uppercase_primary: {
                     letterSpacing: '0.24em',
@@ -53,6 +57,32 @@ const theme = extendTheme({
                 lightweight: {
                     fontWeight: 'normal',
                 },
+            },
+        },
+        Button: {
+            variants: {
+                base: ({ colorMode }) => ({
+                    background:
+                        'linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%)',
+                    borderRadius: 16,
+                    boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.05)',
+                    color: 'gray.0',
+                    '&:hover': {
+                        background:
+                            'linear-gradient(102.47deg, #1667D9 -5.34%, #F279F2 106.58%)',
+                        textDecoration: 'none',
+                    },
+                    '&:disabled': {
+                        background: 'gray.200',
+                        color: colorMode === 'dark' ? 'gray.900' : 'gray.600',
+                        '&:hover': {
+                            background: 'gray.300',
+                        },
+                    },
+                }),
+            },
+            defaultProps: {
+                variant: 'base',
             },
         },
     },
@@ -105,25 +135,6 @@ const theme = extendTheme({
     },
     fonts,
     breakpoints,
-    icons: {
-        logo: {
-            path: (
-                <svg
-                    width="3000"
-                    height="3163"
-                    viewBox="0 0 3000 3163"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <rect width="3000" height="3162.95" fill="none" />
-                    <path
-                        d="M1470.89 1448.81L2170 2488.19H820V706.392H2170L1470.89 1448.81ZM1408.21 1515.37L909.196 2045.3V2393.46H1998.84L1408.21 1515.37Z"
-                        fill="currentColor"
-                    />
-                </svg>
-            ),
-            viewBox: '0 0 3000 3163',
-        },
-    },
 });
 
 export default theme;

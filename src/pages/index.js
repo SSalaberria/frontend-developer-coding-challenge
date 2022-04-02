@@ -5,53 +5,50 @@ import {
     List,
     ListIcon,
     ListItem,
+    Icon,
 } from '@chakra-ui/react';
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons';
 import { Hero } from '../components/Hero';
 import { Container } from '../components/Container';
 import { Main } from '../components/Main';
 import { DarkModeSwitch } from '../components/DarkModeSwitch';
-import { CTA } from '../components/CTA';
 import { Footer } from '../components/Footer';
+import { NavLink } from '../components/ctas/NavLink';
+import { RedeemButton } from '../components/ctas/RedeemButton';
+import Image from 'next/image';
+import { ProductCard } from '../components/cards/ProductCard';
+import { WalkthroughCard } from '../components/cards/WalkthroughCard';
 
 const Index = () => (
     <Container height="100vh">
-        <Hero />
+        {/* <Hero /> */}
         <Main>
-            <Text textStyle="text.l1" variant="uppercase_primary">
-                Example repository of <Code>Next.js</Code> +{' '}
-                <Code>chakra-ui</Code>.
-            </Text>
-
-            <List spacing={3} my={0}>
-                <ListItem>
-                    <ListIcon as={CheckCircleIcon} color="green.500" />
-                    <ChakraLink
-                        isExternal
-                        href="https://chakra-ui.com"
-                        flexGrow={1}
-                        mr={2}>
-                        Chakra UI <LinkIcon />
-                    </ChakraLink>
-                </ListItem>
-                <ListItem>
-                    <ListIcon as={CheckCircleIcon} color="green.default" />
-                    <ChakraLink
-                        isExternal
-                        href="https://nextjs.org"
-                        flexGrow={1}
-                        mr={2}>
-                        Next.js <LinkIcon />
-                    </ChakraLink>
-                </ListItem>
-            </List>
+            <NavLink
+                label="Github"
+                icon={
+                    <Image
+                        src="/assets/icons/github-default.svg"
+                        layout="responsive"
+                        width={0}
+                        height={0}
+                    />
+                }
+                iconHovered={
+                    <Image
+                        src="/assets/icons/github-active.svg"
+                        layout="responsive"
+                        width={0}
+                        height={0}
+                    />
+                }
+                href={'https://github.com/SSalaberria'}
+                isExternal
+            />
+            <ProductCard />
+            <WalkthroughCard />
         </Main>
 
         <DarkModeSwitch />
-        <Footer>
-            <Text>Next ❤️ Chakra</Text>
-        </Footer>
-        <CTA />
+        <Footer></Footer>
     </Container>
 );
 
