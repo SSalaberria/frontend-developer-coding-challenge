@@ -1,5 +1,6 @@
 import { Box, Button, Text } from '@chakra-ui/react';
 import { formatNumber } from '../../utils';
+import { ImgIcon } from '../ImgIcon';
 
 export const RedeemButton = ({ value, disabled, ...props }) => (
     <Button
@@ -29,11 +30,11 @@ export const RedeemButton = ({ value, disabled, ...props }) => (
         <Text textStyle="text.l1" fontWeight="medium">
             {disabled ? 'You need' : 'Redeem for'}
         </Text>
-        <Box width={[5, null, 6]}>
+        <Box>
             {disabled ? (
-                <img src="assets/icons/aeropay-2.svg" />
+                <ImgIcon src="assets/icons/aeropay-2.svg" />
             ) : (
-                <img src="assets/icons/aeropay-3.svg" />
+                <ImgIcon src="assets/icons/aeropay-3.svg" />
             )}
         </Box>
         <Text textStyle="text.l1" fontWeight="medium">
