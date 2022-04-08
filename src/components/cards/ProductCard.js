@@ -1,7 +1,9 @@
 import { Box, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { RedeemButton } from '../ctas/RedeemButton';
-import { memo } from 'react';
+import { memo, useState } from 'react';
+import { useRecoilState, useSetRecoilState } from 'recoil';
+import { balanceState } from '../../store/atoms';
 
 export const ProductCard = ({
     id,
@@ -10,6 +12,24 @@ export const ProductCard = ({
     productPrice,
     category,
 }) => {
+    const [isRedeeming, setIsRedeeming] = useState(false);
+    const [balance, setBalance] = useRecoilState(balanceState);
+
+    const handleRedeem = ({}) => {
+        if (isRedeeming) return;
+
+        setIsRedeeming(true);
+        setTimeout(() => {
+            setIsRedeeming(false);
+            setBalance(prevBalance => {
+                const validTransaction = prevBalance >= productPrice;
+                return validTransaction
+                    ? prevBalance - productPrice
+                    : prevBalance;
+            });
+        }, 2500);
+    };
+
     return (
         <Box width={80} height={506} m="auto">
             <Box
@@ -54,7 +74,13 @@ export const ProductCard = ({
                     </Text>
                 </Box>
             </Box>
-            <RedeemButton value={productPrice} width="100%" />
+            <RedeemButton
+                value={productPrice}
+                balance={balance}
+                onClick={handleRedeem}
+                isLoading={isRedeeming}
+                width="100%"
+            />
         </Box>
     );
 };

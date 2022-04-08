@@ -69,7 +69,14 @@ export const Hero = ({}) => (
                     Here you'll be able to exchange all of your hard-earned
                     Aeropoints and exchange them for cool tech.
                 </Text>
-                <Button p={[8, null, 10]} borderRadius={24}>
+                <Button
+                    p={[8, null, 10]}
+                    borderRadius={24}
+                    onClick={() =>
+                        document
+                            .getElementById('products-section')
+                            .scrollIntoView()
+                    }>
                     <Text
                         textStyle="text.l1"
                         variant="uppercase_secondary"

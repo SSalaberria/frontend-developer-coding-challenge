@@ -1,18 +1,12 @@
-import {
-    Box,
-    Divider,
-    Flex,
-    Hide,
-    Show,
-    SimpleGrid,
-    Text,
-} from '@chakra-ui/react';
+import { Divider, Flex, SimpleGrid, Text } from '@chakra-ui/react';
 import { useEffect, useMemo, useState } from 'react';
+import { useRecoilValue } from 'recoil';
 import useProducts from '../../hooks/useProducts';
-import { ProductCard } from '../cards/ProductCard';
+import { MemoizedCard as ProductCard } from '../cards/ProductCard';
 import { Pagination } from '../ctas/Pagination';
 import { FilterOptionsSelect } from './FilterOptionsSelect';
 import { SortOptions } from './SortOptions';
+import { balanceState } from '../../store/atoms';
 
 const filterOptions = [
     { label: 'All products', value: 'all' },
@@ -29,6 +23,7 @@ export const SearchModule = ({}) => {
     const [filter, setFilter] = useState('ALL');
     const [sort, setSort] = useState('newest');
     const [page, setPage] = useState(1);
+    const balance = useRecoilValue(balanceState);
 
     const handlePageChange = nextPage => {
         setPage(nextPage);
@@ -134,7 +129,11 @@ export const SearchModule = ({}) => {
                             page * productsPerPage,
                         )
                         .map((product, index) => (
-                            <ProductCard {...product} key={index} />
+                            <ProductCard
+                                {...product}
+                                key={index}
+                                balance={balance}
+                            />
                         ))}
                 </SimpleGrid>
             )}

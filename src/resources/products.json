@@ -1,802 +1,802 @@
 [
     {
-        "id": 71013086,
-        "productName": "Canon EOSSD",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "12438",
-        "category": "PHONES",
-        "timestamp": 214084996
-    },
-    {
-        "id": 11481805,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "8945",
-        "category": "CAMERAS",
-        "timestamp": 992691907
-    },
-    {
-        "id": 40418810,
-        "productName": "Dell X2",
-        "productImage": "/assets/illustrations/products/11.png",
-        "productPrice": "970",
-        "category": "TVS",
-        "timestamp": 193864165
-    },
-    {
-        "id": 66137973,
-        "productName": "Parrot AR",
-        "productImage": "/assets/illustrations/products/14.png",
-        "productPrice": "14243",
-        "category": "SMARTPHONES",
-        "timestamp": 1021182504
-    },
-    {
-        "id": 45132952,
-        "productName": "Alienware S23",
-        "productImage": "/assets/illustrations/products/4.png",
-        "productPrice": "2003",
-        "category": "CAMERAS",
-        "timestamp": 408887539
-    },
-    {
-        "id": 19564445,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "10782",
-        "category": "PHONES",
-        "timestamp": 169491209
-    },
-    {
-        "id": 79094630,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "4182",
-        "category": "SMARTPHONES",
-        "timestamp": 490840793
-    },
-    {
-        "id": 91243522,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/1.png",
-        "productPrice": "4470",
-        "category": "LAPTOPS",
-        "timestamp": 1574156321
-    },
-    {
-        "id": 55394314,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "13211",
-        "category": "CAMERAS",
-        "timestamp": 1558835661
-    },
-    {
-        "id": 75655281,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "251",
-        "category": "TVS",
-        "timestamp": 18358488
-    },
-    {
-        "id": 49027367,
-        "productName": "Dell X2",
-        "productImage": "/assets/illustrations/products/4.png",
-        "productPrice": "1411",
-        "category": "LAPTOPS",
-        "timestamp": 838548724
-    },
-    {
-        "id": 42526409,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "14218",
-        "category": "LAPTOPS",
-        "timestamp": 1145006130
-    },
-    {
-        "id": 77376558,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "2415",
-        "category": "PHONES",
-        "timestamp": 115027025
-    },
-    {
-        "id": 5714966,
+        "id": 96399638,
         "productName": "Macbook Air 13",
-        "productImage": "/assets/illustrations/products/7.png",
-        "productPrice": "7703",
-        "category": "CAMERAS",
-        "timestamp": 875506778
-    },
-    {
-        "id": 10007599,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/4.png",
-        "productPrice": "3931",
-        "category": "TVS",
-        "timestamp": 549908252
-    },
-    {
-        "id": 59192367,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/14.png",
-        "productPrice": "6996",
-        "category": "LAPTOPS",
-        "timestamp": 1093676022
-    },
-    {
-        "id": 51924956,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "11471",
-        "category": "CAMERAS",
-        "timestamp": 861042342
-    },
-    {
-        "id": 20559893,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/7.png",
-        "productPrice": "1306",
-        "category": "CAMERAS",
-        "timestamp": 1564200096
-    },
-    {
-        "id": 77247295,
-        "productName": "Macbook Air 13",
-        "productImage": "/assets/illustrations/products/9.png",
-        "productPrice": "7720",
-        "category": "CAMERAS",
-        "timestamp": 1035922839
-    },
-    {
-        "id": 86704871,
-        "productName": "Instant Mini",
-        "productImage": "/assets/illustrations/products/14.png",
-        "productPrice": "5621",
-        "category": "LAPTOPS",
-        "timestamp": 260820313
-    },
-    {
-        "id": 51739490,
-        "productName": "Instant Mini",
-        "productImage": "/assets/illustrations/products/13.png",
-        "productPrice": "1049",
-        "category": "SMARTPHONES",
-        "timestamp": 1267373858
-    },
-    {
-        "id": 16435056,
-        "productName": "Macbook Air",
         "productImage": "/assets/illustrations/products/1.png",
-        "productPrice": "1134",
-        "category": "LAPTOPS",
-        "timestamp": 778042575
-    },
-    {
-        "id": 82060005,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "3727",
-        "category": "PHONES",
-        "timestamp": 1048930294
-    },
-    {
-        "id": 12643289,
-        "productName": "Alienware S23",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "5140",
+        "productPrice": 1559,
         "category": "SMARTPHONES",
-        "timestamp": 638174391
+        "timestamp": 809387460
     },
     {
-        "id": 9062018,
+        "id": 44472674,
         "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "10998",
-        "category": "TVS",
-        "timestamp": 1256045850
-    },
-    {
-        "id": 23403211,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/13.png",
-        "productPrice": "8255",
-        "category": "HEADPHONES",
-        "timestamp": 588044066
-    },
-    {
-        "id": 35562400,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "9964",
-        "category": "LAPTOPS",
-        "timestamp": 63099407
-    },
-    {
-        "id": 29794630,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/13.png",
-        "productPrice": "9781",
-        "category": "CAMERAS",
-        "timestamp": 742642804
-    },
-    {
-        "id": 99778957,
-        "productName": "Go Pro Hero 4",
-        "productImage": "/assets/illustrations/products/7.png",
-        "productPrice": "296",
-        "category": "PHONES",
-        "timestamp": 289519070
-    },
-    {
-        "id": 20963091,
-        "productName": "Go Pro Hero 4",
         "productImage": "/assets/illustrations/products/14.png",
-        "productPrice": "2741",
+        "productPrice": 10046,
         "category": "HEADPHONES",
-        "timestamp": 483424104
+        "timestamp": 578829135
     },
     {
-        "id": 90971233,
-        "productName": "Moto G5",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "7501",
-        "category": "SMARTPHONES",
-        "timestamp": 250328224
-    },
-    {
-        "id": 14165909,
-        "productName": "Dell X2",
-        "productImage": "/assets/illustrations/products/7.png",
-        "productPrice": "12062",
-        "category": "CAMERAS",
-        "timestamp": 1452039171
-    },
-    {
-        "id": 88724138,
-        "productName": "Canon EOSSD",
-        "productImage": "/assets/illustrations/products/11.png",
-        "productPrice": "10955",
-        "category": "CAMERAS",
-        "timestamp": 420123561
-    },
-    {
-        "id": 41797651,
-        "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "3454",
-        "category": "PHONES",
-        "timestamp": 1344741450
-    },
-    {
-        "id": 60727830,
-        "productName": "Canon EOSSD",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "5054",
-        "category": "CAMERAS",
-        "timestamp": 1593398540
-    },
-    {
-        "id": 58635542,
-        "productName": "Samsung G2",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "13493",
-        "category": "TVS",
-        "timestamp": 436676440
-    },
-    {
-        "id": 99435420,
-        "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "361",
-        "category": "CAMERAS",
-        "timestamp": 127347307
-    },
-    {
-        "id": 37865870,
-        "productName": "Parrot AR",
-        "productImage": "/assets/illustrations/products/5.png",
-        "productPrice": "2661",
-        "category": "HEADPHONES",
-        "timestamp": 1467895033
-    },
-    {
-        "id": 4580754,
-        "productName": "Moto G5",
-        "productImage": "/assets/illustrations/products/1.png",
-        "productPrice": "1639",
-        "category": "PHONES",
-        "timestamp": 1599810981
-    },
-    {
-        "id": 55661131,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/7.png",
-        "productPrice": "6234",
-        "category": "CAMERAS",
-        "timestamp": 1635377243
-    },
-    {
-        "id": 59270406,
+        "id": 76595931,
         "productName": "Chromecast 3",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "4251",
-        "category": "PHONES",
-        "timestamp": 1209860603
-    },
-    {
-        "id": 84073443,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/5.png",
-        "productPrice": "1872",
-        "category": "LAPTOPS",
-        "timestamp": 1224680632
-    },
-    {
-        "id": 25834634,
-        "productName": "Macbook Air 13",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "3138",
-        "category": "CAMERAS",
-        "timestamp": 1477089285
-    },
-    {
-        "id": 31011239,
-        "productName": "Moto G5",
-        "productImage": "/assets/illustrations/products/2.png",
-        "productPrice": "8621",
-        "category": "TVS",
-        "timestamp": 1025747019
-    },
-    {
-        "id": 7956846,
-        "productName": "Dell X2",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "10721",
-        "category": "SMARTPHONES",
-        "timestamp": 1415630467
-    },
-    {
-        "id": 55891009,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/13.png",
-        "productPrice": "3993",
-        "category": "PHONES",
-        "timestamp": 647802866
-    },
-    {
-        "id": 47239002,
-        "productName": "Macbook Air 13",
-        "productImage": "/assets/illustrations/products/7.png",
-        "productPrice": "13674",
-        "category": "PHONES",
-        "timestamp": 892501474
-    },
-    {
-        "id": 91479150,
-        "productName": "Dell X2",
-        "productImage": "/assets/illustrations/products/13.png",
-        "productPrice": "5928",
-        "category": "SMARTPHONES",
-        "timestamp": 691150788
-    },
-    {
-        "id": 53924632,
-        "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/3.png",
-        "productPrice": "1130",
-        "category": "SMARTPHONES",
-        "timestamp": 692808689
-    },
-    {
-        "id": 73819280,
-        "productName": "Alienware S23",
-        "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "5312",
-        "category": "TVS",
-        "timestamp": 499839263
-    },
-    {
-        "id": 98007249,
-        "productName": "Parrot AR",
         "productImage": "/assets/illustrations/products/11.png",
-        "productPrice": "5719",
-        "category": "HEADPHONES",
-        "timestamp": 511998430
-    },
-    {
-        "id": 44191069,
-        "productName": "Go Pro Hero 4",
-        "productImage": "/assets/illustrations/products/4.png",
-        "productPrice": "2036",
-        "category": "LAPTOPS",
-        "timestamp": 1303772356
-    },
-    {
-        "id": 71285439,
-        "productName": "Dell X2",
-        "productImage": "/assets/illustrations/products/14.png",
-        "productPrice": "10414",
-        "category": "SMARTPHONES",
-        "timestamp": 1006778162
-    },
-    {
-        "id": 58061913,
-        "productName": "Samsung G2",
-        "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "3390",
+        "productPrice": 336,
         "category": "PHONES",
-        "timestamp": 33041600
+        "timestamp": 843395020
     },
     {
-        "id": 77309370,
-        "productName": "Parrot AR",
-        "productImage": "/assets/illustrations/products/9.png",
-        "productPrice": "2335",
-        "category": "HEADPHONES",
-        "timestamp": 63637143
+        "id": 18210360,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/4.png",
+        "productPrice": 4872,
+        "category": "PHONES",
+        "timestamp": 974126405
     },
     {
-        "id": 8036111,
-        "productName": "Macbook Pro",
+        "id": 63132615,
+        "productName": "Nintendo switch",
         "productImage": "/assets/illustrations/products/2.png",
-        "productPrice": "4488",
+        "productPrice": 7042,
         "category": "TVS",
-        "timestamp": 409600492
+        "timestamp": 1523434497
     },
     {
-        "id": 24649432,
+        "id": 98898830,
+        "productName": "Go Pro Hero 4",
+        "productImage": "/assets/illustrations/products/13.png",
+        "productPrice": 6103,
+        "category": "SMARTPHONES",
+        "timestamp": 317788955
+    },
+    {
+        "id": 1984847,
         "productName": "Chromecast 3",
         "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "8885",
-        "category": "LAPTOPS",
-        "timestamp": 721066041
-    },
-    {
-        "id": 12436211,
-        "productName": "Go Pro Hero 4",
-        "productImage": "/assets/illustrations/products/13.png",
-        "productPrice": "1727",
-        "category": "CAMERAS",
-        "timestamp": 88602569
-    },
-    {
-        "id": 1114090,
-        "productName": "Alienware S23",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "8080",
-        "category": "PHONES",
-        "timestamp": 1606330116
-    },
-    {
-        "id": 86574955,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/2.png",
-        "productPrice": "12291",
-        "category": "TVS",
-        "timestamp": 868852726
-    },
-    {
-        "id": 99397094,
-        "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "1556",
-        "category": "TVS",
-        "timestamp": 1495663869
-    },
-    {
-        "id": 73066838,
-        "productName": "Parrot AR",
-        "productImage": "/assets/illustrations/products/2.png",
-        "productPrice": "1323",
-        "category": "TVS",
-        "timestamp": 1290333350
-    },
-    {
-        "id": 60251902,
-        "productName": "Canon EOSSD",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "2369",
-        "category": "HEADPHONES",
-        "timestamp": 91508765
-    },
-    {
-        "id": 41580897,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/11.png",
-        "productPrice": "13936",
-        "category": "CAMERAS",
-        "timestamp": 1200701101
-    },
-    {
-        "id": 34833907,
-        "productName": "Canon EOSSD",
-        "productImage": "/assets/illustrations/products/11.png",
-        "productPrice": "12376",
+        "productPrice": 10810,
         "category": "SMARTPHONES",
-        "timestamp": 547732392
+        "timestamp": 927957832
     },
     {
-        "id": 17343200,
-        "productName": "Parrot AR",
-        "productImage": "/assets/illustrations/products/11.png",
-        "productPrice": "3565",
-        "category": "CAMERAS",
-        "timestamp": 1280231678
-    },
-    {
-        "id": 2462579,
-        "productName": "Instant Mini",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "7192",
-        "category": "HEADPHONES",
-        "timestamp": 1290864477
-    },
-    {
-        "id": 10204047,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "1620",
-        "category": "HEADPHONES",
-        "timestamp": 1413077914
-    },
-    {
-        "id": 81618638,
-        "productName": "Macbook Air 13",
-        "productImage": "/assets/illustrations/products/14.png",
-        "productPrice": "13133",
-        "category": "LAPTOPS",
-        "timestamp": 52358277
-    },
-    {
-        "id": 18414714,
-        "productName": "Parrot AR",
-        "productImage": "/assets/illustrations/products/1.png",
-        "productPrice": "1774",
-        "category": "CAMERAS",
-        "timestamp": 1559966140
-    },
-    {
-        "id": 53040828,
+        "id": 41423135,
         "productName": "Alienware S23",
-        "productImage": "/assets/illustrations/products/11.png",
-        "productPrice": "2851",
-        "category": "TVS",
-        "timestamp": 963496128
-    },
-    {
-        "id": 65254914,
-        "productName": "Macbook Air 13",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "13983",
-        "category": "CAMERAS",
-        "timestamp": 1253700750
-    },
-    {
-        "id": 68281070,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "1530",
-        "category": "CAMERAS",
-        "timestamp": 382001781
-    },
-    {
-        "id": 95757096,
-        "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/1.png",
-        "productPrice": "6687",
-        "category": "TVS",
-        "timestamp": 1330879481
-    },
-    {
-        "id": 19570075,
-        "productName": "Go Pro Hero 4",
         "productImage": "/assets/illustrations/products/4.png",
-        "productPrice": "2166",
-        "category": "PHONES",
-        "timestamp": 846855678
-    },
-    {
-        "id": 83879462,
-        "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "2120",
+        "productPrice": 3686,
         "category": "SMARTPHONES",
-        "timestamp": 1021324291
+        "timestamp": 149310071
     },
     {
-        "id": 70301483,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "1528",
-        "category": "CAMERAS",
-        "timestamp": 1383192391
-    },
-    {
-        "id": 67621557,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "2835",
-        "category": "PHONES",
-        "timestamp": 47705265
-    },
-    {
-        "id": 85734344,
-        "productName": "Samsung G2",
-        "productImage": "/assets/illustrations/products/1.png",
-        "productPrice": "4262",
-        "category": "LAPTOPS",
-        "timestamp": 728027435
-    },
-    {
-        "id": 82220883,
-        "productName": "Alienware S23",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "3269",
-        "category": "LAPTOPS",
-        "timestamp": 692102212
-    },
-    {
-        "id": 87575356,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "403",
-        "category": "CAMERAS",
-        "timestamp": 950344817
-    },
-    {
-        "id": 73394808,
-        "productName": "Moto G5",
-        "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "5019",
-        "category": "SMARTPHONES",
-        "timestamp": 149599458
-    },
-    {
-        "id": 34258799,
-        "productName": "Moto G5",
-        "productImage": "/assets/illustrations/products/5.png",
-        "productPrice": "495",
-        "category": "CAMERAS",
-        "timestamp": 434496644
-    },
-    {
-        "id": 541195,
-        "productName": "Alienware S23",
-        "productImage": "/assets/illustrations/products/5.png",
-        "productPrice": "1150",
-        "category": "LAPTOPS",
-        "timestamp": 1269082510
-    },
-    {
-        "id": 77504511,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/2.png",
-        "productPrice": "4197",
-        "category": "HEADPHONES",
-        "timestamp": 337757249
-    },
-    {
-        "id": 85817290,
-        "productName": "Go Pro Hero 4",
-        "productImage": "/assets/illustrations/products/9.png",
-        "productPrice": "2022",
-        "category": "PHONES",
-        "timestamp": 1324674483
-    },
-    {
-        "id": 19718380,
-        "productName": "Samsung G2",
-        "productImage": "/assets/illustrations/products/5.png",
-        "productPrice": "1583",
-        "category": "LAPTOPS",
-        "timestamp": 824776978
-    },
-    {
-        "id": 7464716,
-        "productName": "Moto G5",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "11140",
-        "category": "HEADPHONES",
-        "timestamp": 1271055513
-    },
-    {
-        "id": 9776004,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "12534",
-        "category": "TVS",
-        "timestamp": 1079538367
-    },
-    {
-        "id": 6398373,
-        "productName": "Go Pro Hero 4",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "3525",
-        "category": "SMARTPHONES",
-        "timestamp": 1527961044
-    },
-    {
-        "id": 96708657,
+        "id": 20716420,
         "productName": "Dell X2",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "8739",
-        "category": "SMARTPHONES",
-        "timestamp": 1524728387
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 5485,
+        "category": "CAMERAS",
+        "timestamp": 57635697
     },
     {
-        "id": 89158497,
+        "id": 10447744,
+        "productName": "Samsung G2",
+        "productImage": "/assets/illustrations/products/10.png",
+        "productPrice": 697,
+        "category": "HEADPHONES",
+        "timestamp": 1508386120
+    },
+    {
+        "id": 55737899,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/14.png",
+        "productPrice": 5305,
+        "category": "LAPTOPS",
+        "timestamp": 518165063
+    },
+    {
+        "id": 21242114,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/13.png",
+        "productPrice": 2620,
+        "category": "SMARTPHONES",
+        "timestamp": 954735180
+    },
+    {
+        "id": 57595038,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/5.png",
+        "productPrice": 7394,
+        "category": "HEADPHONES",
+        "timestamp": 1396942147
+    },
+    {
+        "id": 32227567,
+        "productName": "Instant Mini",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 2265,
+        "category": "LAPTOPS",
+        "timestamp": 1603625596
+    },
+    {
+        "id": 65151860,
         "productName": "Nintendo switch",
         "productImage": "/assets/illustrations/products/13.png",
-        "productPrice": "1956",
-        "category": "PHONES",
-        "timestamp": 1617100756
-    },
-    {
-        "id": 3241110,
-        "productName": "Go Pro Hero 4",
-        "productImage": "/assets/illustrations/products/8.png",
-        "productPrice": "10774",
-        "category": "LAPTOPS",
-        "timestamp": 1077831855
-    },
-    {
-        "id": 5779339,
-        "productName": "Go Pro Hero 4",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "3559",
+        "productPrice": 9707,
         "category": "HEADPHONES",
-        "timestamp": 1510884739
+        "timestamp": 943816533
     },
     {
-        "id": 35157901,
-        "productName": "Kobo Aura",
-        "productImage": "/assets/illustrations/products/6.png",
-        "productPrice": "11640",
+        "id": 13940100,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/7.png",
+        "productPrice": 1420,
         "category": "LAPTOPS",
-        "timestamp": 874973509
+        "timestamp": 291442587
     },
     {
-        "id": 44844362,
-        "productName": "Nintendo switch",
-        "productImage": "/assets/illustrations/products/12.png",
-        "productPrice": "11994",
+        "id": 15021948,
+        "productName": "Moto G5",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 3305,
+        "category": "HEADPHONES",
+        "timestamp": 331793720
+    },
+    {
+        "id": 21604369,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/6.png",
+        "productPrice": 7446,
+        "category": "TVS",
+        "timestamp": 1607343364
+    },
+    {
+        "id": 28471841,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 1867,
+        "category": "HEADPHONES",
+        "timestamp": 1548012834
+    },
+    {
+        "id": 93758245,
+        "productName": "Samsung G2",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 3532,
         "category": "SMARTPHONES",
-        "timestamp": 204428708
+        "timestamp": 404093385
     },
     {
-        "id": 94337822,
+        "id": 34056624,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 8862,
+        "category": "SMARTPHONES",
+        "timestamp": 1020385766
+    },
+    {
+        "id": 29682030,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/6.png",
+        "productPrice": 2435,
+        "category": "TVS",
+        "timestamp": 677604456
+    },
+    {
+        "id": 96077062,
+        "productName": "Macbook Air",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 3545,
+        "category": "HEADPHONES",
+        "timestamp": 1068152216
+    },
+    {
+        "id": 94060606,
+        "productName": "Macbook Air 13",
+        "productImage": "/assets/illustrations/products/4.png",
+        "productPrice": 817,
+        "category": "LAPTOPS",
+        "timestamp": 578750844
+    },
+    {
+        "id": 9285144,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/9.png",
+        "productPrice": 373,
+        "category": "HEADPHONES",
+        "timestamp": 368222253
+    },
+    {
+        "id": 479307,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/14.png",
+        "productPrice": 3241,
+        "category": "LAPTOPS",
+        "timestamp": 1280393570
+    },
+    {
+        "id": 53204135,
+        "productName": "Go Pro Hero 4",
+        "productImage": "/assets/illustrations/products/6.png",
+        "productPrice": 10772,
+        "category": "HEADPHONES",
+        "timestamp": 772794909
+    },
+    {
+        "id": 28012165,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/7.png",
+        "productPrice": 8494,
+        "category": "HEADPHONES",
+        "timestamp": 464745047
+    },
+    {
+        "id": 13260913,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 4993,
+        "category": "HEADPHONES",
+        "timestamp": 989800207
+    },
+    {
+        "id": 10056360,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/6.png",
+        "productPrice": 4967,
+        "category": "TVS",
+        "timestamp": 236809631
+    },
+    {
+        "id": 56616091,
+        "productName": "Samsung G2",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 12993,
+        "category": "CAMERAS",
+        "timestamp": 514838355
+    },
+    {
+        "id": 3491952,
+        "productName": "Macbook Pro",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 2329,
+        "category": "PHONES",
+        "timestamp": 469495475
+    },
+    {
+        "id": 96905287,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/7.png",
+        "productPrice": 409,
+        "category": "HEADPHONES",
+        "timestamp": 333543422
+    },
+    {
+        "id": 3074093,
+        "productName": "Kobo Aura",
+        "productImage": "/assets/illustrations/products/14.png",
+        "productPrice": 10444,
+        "category": "LAPTOPS",
+        "timestamp": 857028323
+    },
+    {
+        "id": 44265679,
+        "productName": "Macbook Pro",
+        "productImage": "/assets/illustrations/products/5.png",
+        "productPrice": 8543,
+        "category": "LAPTOPS",
+        "timestamp": 375790566
+    },
+    {
+        "id": 61847988,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 4676,
+        "category": "CAMERAS",
+        "timestamp": 1552138498
+    },
+    {
+        "id": 18376769,
+        "productName": "Go Pro Hero 4",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 6049,
+        "category": "CAMERAS",
+        "timestamp": 512455960
+    },
+    {
+        "id": 31221234,
+        "productName": "Macbook Pro",
+        "productImage": "/assets/illustrations/products/7.png",
+        "productPrice": 1778,
+        "category": "PHONES",
+        "timestamp": 397433613
+    },
+    {
+        "id": 25199429,
+        "productName": "Samsung G2",
+        "productImage": "/assets/illustrations/products/3.png",
+        "productPrice": 3728,
+        "category": "SMARTPHONES",
+        "timestamp": 1501282778
+    },
+    {
+        "id": 38149179,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 13277,
+        "category": "HEADPHONES",
+        "timestamp": 976795388
+    },
+    {
+        "id": 69083205,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/7.png",
+        "productPrice": 5597,
+        "category": "PHONES",
+        "timestamp": 102371593
+    },
+    {
+        "id": 27813491,
+        "productName": "Canon EOSSD",
+        "productImage": "/assets/illustrations/products/5.png",
+        "productPrice": 3513,
+        "category": "TVS",
+        "timestamp": 650939465
+    },
+    {
+        "id": 5321397,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 1209,
+        "category": "HEADPHONES",
+        "timestamp": 1525831825
+    },
+    {
+        "id": 73016953,
+        "productName": "Instant Mini",
+        "productImage": "/assets/illustrations/products/7.png",
+        "productPrice": 6962,
+        "category": "TVS",
+        "timestamp": 547224739
+    },
+    {
+        "id": 74258328,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/4.png",
+        "productPrice": 5910,
+        "category": "PHONES",
+        "timestamp": 844990455
+    },
+    {
+        "id": 8344206,
+        "productName": "Canon EOSSD",
+        "productImage": "/assets/illustrations/products/8.png",
+        "productPrice": 1127,
+        "category": "PHONES",
+        "timestamp": 434806530
+    },
+    {
+        "id": 55688582,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 6191,
+        "category": "SMARTPHONES",
+        "timestamp": 1398485586
+    },
+    {
+        "id": 25401520,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/13.png",
+        "productPrice": 8416,
+        "category": "PHONES",
+        "timestamp": 1378661960
+    },
+    {
+        "id": 23806629,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 5192,
+        "category": "HEADPHONES",
+        "timestamp": 1072175846
+    },
+    {
+        "id": 12028781,
+        "productName": "Canon EOSSD",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 1628,
+        "category": "HEADPHONES",
+        "timestamp": 697456084
+    },
+    {
+        "id": 91907913,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/7.png",
+        "productPrice": 1618,
+        "category": "CAMERAS",
+        "timestamp": 1288222560
+    },
+    {
+        "id": 48156980,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 1409,
+        "category": "SMARTPHONES",
+        "timestamp": 1099507173
+    },
+    {
+        "id": 63711983,
+        "productName": "Macbook Pro",
+        "productImage": "/assets/illustrations/products/8.png",
+        "productPrice": 2883,
+        "category": "TVS",
+        "timestamp": 1630747143
+    },
+    {
+        "id": 4582520,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 6327,
+        "category": "HEADPHONES",
+        "timestamp": 1266853275
+    },
+    {
+        "id": 79223675,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/14.png",
+        "productPrice": 812,
+        "category": "SMARTPHONES",
+        "timestamp": 688867189
+    },
+    {
+        "id": 77752303,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 2187,
+        "category": "PHONES",
+        "timestamp": 222883371
+    },
+    {
+        "id": 30831673,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 872,
+        "category": "SMARTPHONES",
+        "timestamp": 1297533482
+    },
+    {
+        "id": 14722791,
+        "productName": "Macbook Air",
+        "productImage": "/assets/illustrations/products/5.png",
+        "productPrice": 1395,
+        "category": "TVS",
+        "timestamp": 1444975988
+    },
+    {
+        "id": 29966245,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 3138,
+        "category": "PHONES",
+        "timestamp": 334712253
+    },
+    {
+        "id": 50948961,
+        "productName": "Macbook Air 13",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 12766,
+        "category": "LAPTOPS",
+        "timestamp": 414968124
+    },
+    {
+        "id": 34359605,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/3.png",
+        "productPrice": 7135,
+        "category": "PHONES",
+        "timestamp": 662036569
+    },
+    {
+        "id": 27972352,
+        "productName": "Moto G5",
+        "productImage": "/assets/illustrations/products/3.png",
+        "productPrice": 390,
+        "category": "LAPTOPS",
+        "timestamp": 856562701
+    },
+    {
+        "id": 7108081,
+        "productName": "Macbook Air 13",
+        "productImage": "/assets/illustrations/products/3.png",
+        "productPrice": 4524,
+        "category": "SMARTPHONES",
+        "timestamp": 1522717525
+    },
+    {
+        "id": 83960642,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/5.png",
+        "productPrice": 4933,
+        "category": "PHONES",
+        "timestamp": 222090279
+    },
+    {
+        "id": 74579867,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/14.png",
+        "productPrice": 3687,
+        "category": "TVS",
+        "timestamp": 1453709557
+    },
+    {
+        "id": 6196149,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/6.png",
+        "productPrice": 4049,
+        "category": "HEADPHONES",
+        "timestamp": 332875792
+    },
+    {
+        "id": 50719310,
+        "productName": "Moto G5",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 2014,
+        "category": "LAPTOPS",
+        "timestamp": 355821115
+    },
+    {
+        "id": 81833582,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/8.png",
+        "productPrice": 2447,
+        "category": "CAMERAS",
+        "timestamp": 91679293
+    },
+    {
+        "id": 22963654,
+        "productName": "Instant Mini",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 2167,
+        "category": "CAMERAS",
+        "timestamp": 705836058
+    },
+    {
+        "id": 85190410,
+        "productName": "Macbook Air 13",
+        "productImage": "/assets/illustrations/products/11.png",
+        "productPrice": 13065,
+        "category": "LAPTOPS",
+        "timestamp": 661773492
+    },
+    {
+        "id": 79075669,
+        "productName": "Kobo Aura",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 3284,
+        "category": "SMARTPHONES",
+        "timestamp": 700150124
+    },
+    {
+        "id": 26257364,
+        "productName": "Go Pro Hero 4",
+        "productImage": "/assets/illustrations/products/10.png",
+        "productPrice": 14139,
+        "category": "PHONES",
+        "timestamp": 1008780786
+    },
+    {
+        "id": 58269220,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/10.png",
+        "productPrice": 4048,
+        "category": "HEADPHONES",
+        "timestamp": 98649333
+    },
+    {
+        "id": 5904217,
+        "productName": "Macbook Air 13",
+        "productImage": "/assets/illustrations/products/9.png",
+        "productPrice": 14163,
+        "category": "SMARTPHONES",
+        "timestamp": 1285696240
+    },
+    {
+        "id": 28278858,
+        "productName": "Samsung G2",
+        "productImage": "/assets/illustrations/products/13.png",
+        "productPrice": 9114,
+        "category": "LAPTOPS",
+        "timestamp": 1629799749
+    },
+    {
+        "id": 61480923,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/14.png",
+        "productPrice": 2983,
+        "category": "SMARTPHONES",
+        "timestamp": 1138341293
+    },
+    {
+        "id": 72146575,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/9.png",
+        "productPrice": 6843,
+        "category": "HEADPHONES",
+        "timestamp": 1209355352
+    },
+    {
+        "id": 46112157,
+        "productName": "Macbook Air 13",
+        "productImage": "/assets/illustrations/products/13.png",
+        "productPrice": 4501,
+        "category": "HEADPHONES",
+        "timestamp": 53781879
+    },
+    {
+        "id": 65434645,
+        "productName": "Macbook Air",
+        "productImage": "/assets/illustrations/products/3.png",
+        "productPrice": 14033,
+        "category": "TVS",
+        "timestamp": 1600684979
+    },
+    {
+        "id": 6226410,
+        "productName": "Macbook Air 13",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 2509,
+        "category": "SMARTPHONES",
+        "timestamp": 575128287
+    },
+    {
+        "id": 11603313,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 2948,
+        "category": "HEADPHONES",
+        "timestamp": 440226786
+    },
+    {
+        "id": 46272255,
+        "productName": "Macbook Air",
+        "productImage": "/assets/illustrations/products/2.png",
+        "productPrice": 2715,
+        "category": "PHONES",
+        "timestamp": 1582726107
+    },
+    {
+        "id": 3379970,
+        "productName": "Nintendo switch",
+        "productImage": "/assets/illustrations/products/8.png",
+        "productPrice": 8115,
+        "category": "HEADPHONES",
+        "timestamp": 240105447
+    },
+    {
+        "id": 6961973,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/8.png",
+        "productPrice": 13872,
+        "category": "PHONES",
+        "timestamp": 691862960
+    },
+    {
+        "id": 84335710,
+        "productName": "Instant Mini",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 1069,
+        "category": "HEADPHONES",
+        "timestamp": 1528400097
+    },
+    {
+        "id": 48485972,
         "productName": "Moto G5",
         "productImage": "/assets/illustrations/products/4.png",
-        "productPrice": "410",
-        "category": "HEADPHONES",
-        "timestamp": 644554496
+        "productPrice": 1141,
+        "category": "SMARTPHONES",
+        "timestamp": 845056852
     },
     {
-        "id": 95211112,
-        "productName": "Canon EOSSD",
-        "productImage": "/assets/illustrations/products/9.png",
-        "productPrice": "3598",
-        "category": "PHONES",
-        "timestamp": 696369293
-    },
-    {
-        "id": 89291428,
-        "productName": "Macbook Pro",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "10803",
+        "id": 17423958,
+        "productName": "Alienware S23",
+        "productImage": "/assets/illustrations/products/6.png",
+        "productPrice": 11695,
         "category": "CAMERAS",
-        "timestamp": 998798122
+        "timestamp": 491501479
     },
     {
-        "id": 72759967,
-        "productName": "Macbook Air",
-        "productImage": "/assets/illustrations/products/10.png",
-        "productPrice": "2588",
+        "id": 27765836,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 6761,
+        "category": "LAPTOPS",
+        "timestamp": 381306728
+    },
+    {
+        "id": 85210601,
+        "productName": "Go Pro Hero 4",
+        "productImage": "/assets/illustrations/products/5.png",
+        "productPrice": 10767,
+        "category": "LAPTOPS",
+        "timestamp": 1441400169
+    },
+    {
+        "id": 94038828,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/14.png",
+        "productPrice": 2744,
+        "category": "TVS",
+        "timestamp": 492135775
+    },
+    {
+        "id": 25156369,
+        "productName": "Macbook Pro",
+        "productImage": "/assets/illustrations/products/5.png",
+        "productPrice": 2601,
         "category": "PHONES",
-        "timestamp": 48639284
+        "timestamp": 981611574
+    },
+    {
+        "id": 44243184,
+        "productName": "Chromecast 3",
+        "productImage": "/assets/illustrations/products/12.png",
+        "productPrice": 3876,
+        "category": "CAMERAS",
+        "timestamp": 1070574998
+    },
+    {
+        "id": 21818379,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/10.png",
+        "productPrice": 6918,
+        "category": "HEADPHONES",
+        "timestamp": 1244902456
+    },
+    {
+        "id": 50345666,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/10.png",
+        "productPrice": 6275,
+        "category": "TVS",
+        "timestamp": 595682065
+    },
+    {
+        "id": 60949253,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/4.png",
+        "productPrice": 3925,
+        "category": "SMARTPHONES",
+        "timestamp": 1424514608
+    },
+    {
+        "id": 59200302,
+        "productName": "Macbook Air",
+        "productImage": "/assets/illustrations/products/6.png",
+        "productPrice": 3175,
+        "category": "LAPTOPS",
+        "timestamp": 1258327695
+    },
+    {
+        "id": 4459761,
+        "productName": "Samsung G2",
+        "productImage": "/assets/illustrations/products/12.png",
+        "productPrice": 786,
+        "category": "HEADPHONES",
+        "timestamp": 1084161676
+    },
+    {
+        "id": 72068005,
+        "productName": "Instant Mini",
+        "productImage": "/assets/illustrations/products/3.png",
+        "productPrice": 4140,
+        "category": "CAMERAS",
+        "timestamp": 1602192131
+    },
+    {
+        "id": 6025764,
+        "productName": "Parrot AR",
+        "productImage": "/assets/illustrations/products/8.png",
+        "productPrice": 6322,
+        "category": "SMARTPHONES",
+        "timestamp": 278324631
+    },
+    {
+        "id": 3671351,
+        "productName": "Dell X2",
+        "productImage": "/assets/illustrations/products/1.png",
+        "productPrice": 3557,
+        "category": "HEADPHONES",
+        "timestamp": 604383505
     }
 ]

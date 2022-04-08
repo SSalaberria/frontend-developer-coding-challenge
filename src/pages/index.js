@@ -5,7 +5,7 @@ import { SearchModule } from '../components/search/SearchModule';
 
 const Index = () => (
     <AppLayout hero={<Hero />}>
-        <Flex pt={20} flexDirection="column">
+        <Flex pt={20} flexDirection="column" id="products-section">
             <Flex gap={5} mb={10}>
                 <Text textStyle="title.l2" color="brand.default.primary">
                     TECH
