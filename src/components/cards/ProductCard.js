@@ -1,10 +1,17 @@
 import { Box, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 import { RedeemButton } from '../ctas/RedeemButton';
+import { memo } from 'react';
 
-export const ProductCard = ({}) => {
+export const ProductCard = ({
+    id,
+    productName,
+    productImage,
+    productPrice,
+    category,
+}) => {
     return (
-        <Box width={80} height={506}>
+        <Box width={80} height={506} m="auto">
             <Box
                 height={430}
                 mb={4}
@@ -23,7 +30,7 @@ export const ProductCard = ({}) => {
                     borderBottomStyle="solid"
                     borderBottomColor="gray.300">
                     <Image
-                        src="/assets/illustrations/product-image-example.png"
+                        src={productImage}
                         layout="responsive"
                         width={0}
                         height={0}
@@ -36,18 +43,20 @@ export const ProductCard = ({}) => {
                         //color={useColorModeValue('gray.900', 'gray.900')}
                         mb={1}
                         color="gray.900">
-                        Product name
+                        {productName}
                     </Text>
                     <Text
                         textStyle="text.l2"
                         variant="uppercase_secondary"
                         //color={useColorModeValue('gray.600', 'gray.600')}
                         color="gray.600">
-                        Product type
+                        {category}
                     </Text>
                 </Box>
             </Box>
-            <RedeemButton value={1250} width="100%" />
+            <RedeemButton value={productPrice} width="100%" />
         </Box>
     );
 };
+
+export const MemoizedCard = memo(ProductCard);

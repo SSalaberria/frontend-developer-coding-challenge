@@ -16,6 +16,7 @@ export const SelectableTag = ({ label, isSelected }) => {
             <Text
                 textStyle="text.l1"
                 color={isSelected && 'gray.100'}
+                whiteSpace="nowrap"
                 bgGradient={
                     !isSelected &&
                     'linear-gradient(102.47deg, brand.default.primary -5.34%, brand.default.secondary 106.58%)'

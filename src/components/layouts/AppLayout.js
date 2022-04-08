@@ -35,7 +35,7 @@ export const AppLayout = ({ title, hero, children }) => {
                 {hero}
 
                 <Main>{children}</Main>
-                {/* <Footer /> */}
+                <Footer />
                 <DarkModeSwitch />
 
                 <AeropayModule />

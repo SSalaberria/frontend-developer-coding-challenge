@@ -39,6 +39,7 @@ export const WalkthroughCard = ({ title, description, imgUrl }) => {
                         width={0}
                         height={0}
                         objectFit="scale-down"
+                        priority
                     />
                 </Box>
 

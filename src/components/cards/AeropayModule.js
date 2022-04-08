@@ -73,11 +73,21 @@ export const AeropayModule = ({}) => {
                             right="1rem"
                             color={useColorModeValue('gray.900', 'gray.0')}
                             boxShadow="0px 2px 12px rgba(0, 0, 0, 0.08)"
+                            borderColor={useColorModeValue(
+                                'gray.300',
+                                'gray.900',
+                            )}
                             _focus={{
-                                borderColor: 'gray.300',
+                                borderColor: 'none',
                             }}
                             borderRadius={16}>
-                            <PopoverHeader pl={5} my={1}>
+                            <PopoverHeader
+                                pl={5}
+                                my={1}
+                                borderColor={useColorModeValue(
+                                    'gray.300',
+                                    'gray.600',
+                                )}>
                                 <Text textStyle="text.l1">Add Balance</Text>
                             </PopoverHeader>
                             <PopoverBody
@@ -94,8 +104,9 @@ export const AeropayModule = ({}) => {
                                     justifyContent="space-around"
                                     my={5}
                                     width="100%">
-                                    {chargingValues.map(value => (
+                                    {chargingValues.map((value, index) => (
                                         <Box
+                                            key={index}
                                             onClick={() =>
                                                 setSelectedValue(value)
                                             }>

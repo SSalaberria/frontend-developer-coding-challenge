@@ -9,38 +9,38 @@ import {
 import Image from 'next/image';
 import { ImgIcon } from './ImgIcon';
 import { WalkthroughCard } from './cards/WalkthroughCard';
+import { memo } from 'react';
 
 export const Hero = ({}) => (
-    <Box position="relative" height="100vh" width="100%" mt={[50, null]}>
+    <Box position="relative" width="100%" mt={[50, null]}>
         <Box
             position="absolute"
-            bottom={['5%', '10%']}
-            height={['95%', null, '90%']}
+            bottom={['5%', '15%']}
+            height={['95%', null, '85%']}
             width="100%"
             zIndex={0}
             backgroundRepeat="repeat-y"
             sx={{
                 maskImage:
                     'url(/assets/illustrations/single-wave-pattern-background.svg)',
-                backgroundColor: [
-                    useColorModeValue('#E5F0FF', '#E5F0FF10'),
-                    null,
-                    useColorModeValue('#E5F0FF90', '#E5F0FF10'),
-                ],
+                backgroundColor: [useColorModeValue('#E5F0FF', '#E5F0FF10')],
                 maskSize: ['56%', '18%'], //E5F0FF80
             }}
         />
         <Box
             display="flex"
             flexDirection={['column', null, 'row']}
-            alignItems="flex-end"
+            alignItems="flex-start"
             margin="auto"
             width="100%"
-            maxWidth="91rem"
+            maxWidth="101.5rem"
             pt="1rem"
             px={[null, '1.25rem', '5rem', '2rem']}>
             <Box
+                display="flex"
+                flexDirection="column"
                 textAlign={['center', null, 'left']}
+                alignItems={[null, null, 'flex-start']}
                 px={['1.25rem', null]}
                 width={['100%', null, '50%']}
                 zIndex={1}>
@@ -97,13 +97,16 @@ export const Hero = ({}) => (
                     ]}
                 />
                 <Show above="sm">
-                    <Image
-                        src="/assets/illustrations/hero-desktop.png"
-                        layout="responsive"
-                        width={0}
-                        height={0}
-                        objectFit="scale-down"
-                    />
+                    <Box mt={[null, null, -28]}>
+                        <Image
+                            src="/assets/illustrations/hero-desktop.png"
+                            layout="responsive"
+                            width={0}
+                            height={0}
+                            objectFit="scale-down"
+                            priority
+                        />
+                    </Box>
                 </Show>
                 <Show below="sm" position="relative" overflowX="visible">
                     <Box
@@ -120,6 +123,7 @@ export const Hero = ({}) => (
                             width={600}
                             height={600}
                             overflow="hidden"
+                            priority
                         />
                     </Box>
                 </Show>
@@ -134,7 +138,7 @@ export const Hero = ({}) => (
                 position="absolute"
                 zIndex={0}
                 top={['-25%', '15%']}
-                height={['130%', '35%', null, '55%', null, '65%']}
+                height={['126%', '35%', null, '55%', null, '65%']}
                 width="100%"
                 bgGradient={
                     'linear-gradient(102.47deg, specials.sectionBG.primary -5.34%, specials.sectionBG.secondary 106.58%)'
@@ -177,3 +181,5 @@ export const Hero = ({}) => (
         </Box>
     </Box>
 );
+
+export const MemoizedHero = memo(Hero);

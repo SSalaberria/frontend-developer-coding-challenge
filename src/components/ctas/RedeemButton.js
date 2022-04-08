@@ -7,7 +7,6 @@ export const RedeemButton = ({ value, disabled, ...props }) => (
         {...props}
         disabled={disabled}
         loadingText="Processing..."
-        loadingSpinnerColor="white"
         gap={2}
         display="flex"
         px={14}
