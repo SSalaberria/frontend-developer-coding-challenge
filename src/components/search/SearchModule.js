@@ -8,14 +8,6 @@ import { FilterOptionsSelect } from './FilterOptionsSelect';
 import { SortOptions } from './SortOptions';
 import { balanceState } from '../../store/atoms';
 
-const filterOptions = [
-    { label: 'All products', value: 'all' },
-    { label: 'Gaming', value: 'gaming' },
-    { label: 'Audio', value: 'audio' },
-    { label: 'Smart Home', value: 'smart' },
-    { label: 'Monitors & TV', value: 'screens' },
-];
-
 const productsPerPage = 12;
 
 export const SearchModule = ({}) => {

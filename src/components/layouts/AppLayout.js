@@ -37,7 +37,6 @@ export const AppLayout = ({ title, hero, children }) => {
                 <Main>{children}</Main>
                 <Footer />
                 <DarkModeSwitch />
-
                 <AeropayModule />
             </Container>
         </Fragment>

@@ -1,9 +1,10 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Text, useToast } from '@chakra-ui/react';
 import Image from 'next/image';
 import { RedeemButton } from '../ctas/RedeemButton';
 import { memo, useState } from 'react';
-import { useRecoilState, useSetRecoilState } from 'recoil';
+import { useRecoilState } from 'recoil';
 import { balanceState } from '../../store/atoms';
+import { Toast } from '../feedback/Toast';
 
 export const ProductCard = ({
     id,
@@ -14,6 +15,7 @@ export const ProductCard = ({
 }) => {
     const [isRedeeming, setIsRedeeming] = useState(false);
     const [balance, setBalance] = useRecoilState(balanceState);
+    const toast = useToast();
 
     const handleRedeem = ({}) => {
         if (isRedeeming) return;
@@ -23,11 +25,23 @@ export const ProductCard = ({
             setIsRedeeming(false);
             setBalance(prevBalance => {
                 const validTransaction = prevBalance >= productPrice;
+                toast({
+                    title: productName,
+                    render: props => (
+                        <Toast
+                            {...props}
+                            productName={productName}
+                            error={!validTransaction}
+                        />
+                    ),
+                    duration: 9000,
+                    isClosable: true,
+                });
                 return validTransaction
                     ? prevBalance - productPrice
                     : prevBalance;
             });
-        }, 2500);
+        }, 700);
     };
 
     return (

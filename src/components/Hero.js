@@ -1,11 +1,4 @@
-import {
-    Box,
-    Button,
-    Heading,
-    Show,
-    Text,
-    useColorModeValue,
-} from '@chakra-ui/react';
+import { Box, Button, Show, Text, useColorModeValue } from '@chakra-ui/react';
 import Image from 'next/image';
 import { ImgIcon } from './ImgIcon';
 import { WalkthroughCard } from './cards/WalkthroughCard';
