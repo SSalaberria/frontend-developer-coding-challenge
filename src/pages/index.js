@@ -3,7 +3,7 @@ import { MemoizedHero as Hero } from '../components/Hero';
 import { Flex, Text } from '@chakra-ui/react';
 import { SearchModule } from '../components/search/SearchModule';
 
-const Index = () => (
+const Index = ({ user }) => (
     <AppLayout hero={<Hero />}>
         <Flex pt={20} flexDirection="column" id="products-section">
             <Flex gap={5} mb={10}>

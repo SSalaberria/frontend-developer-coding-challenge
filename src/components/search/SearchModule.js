@@ -7,12 +7,13 @@ import { Pagination } from '../ctas/Pagination';
 import { FilterOptionsSelect } from './FilterOptionsSelect';
 import { SortOptions } from './SortOptions';
 import { balanceState } from '../../store/atoms';
+import useHistory from '../../hooks/useHistory';
 
 const productsPerPage = 12;
 
 export const SearchModule = ({}) => {
     const products = useProducts();
-    const [filter, setFilter] = useState('ALL');
+    const [filter, setFilter] = useState('All products');
     const [sort, setSort] = useState('newest');
     const [page, setPage] = useState(1);
     const balance = useRecoilValue(balanceState);
@@ -25,13 +26,15 @@ export const SearchModule = ({}) => {
         const categories = new Set(
             products?.data?.map(product => product.category),
         );
+        return ['All products', ...categories];
+        /*
         return [
             { label: 'All products', value: 'ALL' },
             ...[...categories].map(category => ({
                 label: category.toLowerCase(),
                 value: category,
             })),
-        ];
+        ];*/
     }, [products.data]);
 
     useEffect(() => setPage(1), [filter, sort]);
@@ -39,20 +42,20 @@ export const SearchModule = ({}) => {
     const filteredProducts = useMemo(() => {
         let prods = products?.data;
         if (!prods) return [];
-        if (filter !== 'ALL') {
+        if (filter !== 'All products') {
             prods = prods.filter(product => product.category === filter);
         }
         switch (sort) {
             case 'newest': {
-                prods = prods.sort((a, b) => b.timestamp - a.timestamp);
+                //prods = prods.sort((a, b) => b.timestamp - a.timestamp);
                 break;
             }
             case 'lowest': {
-                prods = prods.sort((a, b) => a.productPrice - b.productPrice);
+                prods = prods.sort((a, b) => a.cost - b.cost);
                 break;
             }
             case 'highest': {
-                prods = prods.sort((a, b) => b.productPrice - a.productPrice);
+                prods = prods.sort((a, b) => b.cost - a.cost);
                 break;
             }
         }
@@ -113,22 +116,19 @@ export const SearchModule = ({}) => {
                 </Flex>
             </Flex>
 
-            {products.isFetched && (
-                <SimpleGrid minChildWidth="320px" spacing={5} spacingY={20}>
-                    {filteredProducts
-                        .slice(
-                            (page - 1) * productsPerPage,
-                            page * productsPerPage,
-                        )
-                        .map((product, index) => (
-                            <ProductCard
-                                {...product}
-                                key={index}
-                                balance={balance}
-                            />
-                        ))}
-                </SimpleGrid>
-            )}
+            <SimpleGrid minChildWidth="320px" spacing={5} spacingY={20}>
+                {filteredProducts
+                    .slice((page - 1) * productsPerPage, page * productsPerPage)
+                    .map((product, index) => (
+                        <ProductCard
+                            {...product}
+                            key={index}
+                            balance={balance}
+                            loading={products.isLoading}
+                        />
+                    ))}
+            </SimpleGrid>
+
             <Flex
                 flexDir={['column', null, null, null, 'row-reverse']}
                 mt={16}

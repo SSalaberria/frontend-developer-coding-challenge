@@ -33,9 +33,9 @@ export const FilterOptionsSelect = ({
                         textTransform: 'capitalize',
                     },
                 }}>
-                {options.map((filt, index) => (
-                    <option key={index} value={filt.value}>
-                        {filt.label}
+                {options.map((option, index) => (
+                    <option key={index} value={option}>
+                        {option}
                     </option>
                 ))}
             </Select>

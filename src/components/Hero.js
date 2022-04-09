@@ -27,8 +27,7 @@ export const Hero = ({}) => (
             margin="auto"
             width="100%"
             maxWidth="101.5rem"
-            pt="1rem"
-            px={[null, '1.25rem', '5rem', '2rem']}>
+            pt="1rem">
             <Box
                 display="flex"
                 flexDirection="column"
@@ -152,7 +151,7 @@ export const Hero = ({}) => (
                 gap={[6, null, 0]}
                 justifyContent="center"
                 alignItems="center"
-                maxWidth="91rem"
+                maxWidth="101.5rem"
                 overflowY="visible"
                 px={['1.25rem', null, '5rem', '2rem']}
                 mt={[24, null]}>

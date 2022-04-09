@@ -2,7 +2,7 @@ import { CloseIcon } from '@chakra-ui/icons';
 import { Flex, IconButton, Text, useColorModeValue } from '@chakra-ui/react';
 import { ImgIcon } from '../ImgIcon';
 
-export const Toast = ({ id, onClose, productName, error, ...props }) => (
+export const Toast = ({ id, onClose, title, error, description, ...props }) => (
     <Flex
         alignItems="center"
         background={useColorModeValue('gray.0', 'gray.900')}
@@ -24,13 +24,9 @@ export const Toast = ({ id, onClose, productName, error, ...props }) => (
                 color={useColorModeValue('gray.900', 'gray.0')}
                 mr={1}
                 display={error ? 'none' : 'block'}>
-                {productName}
+                {title}
             </Text>
-            <Text color="gray.600">
-                {error
-                    ? 'There was a problem with the transaction'
-                    : 'redeemed successfully'}
-            </Text>
+            <Text color="gray.600">{description}</Text>
         </Flex>
 
         <IconButton

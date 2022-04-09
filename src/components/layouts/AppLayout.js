@@ -22,8 +22,8 @@ export const AppLayout = ({ title, hero, children }) => {
                 <HStack
                     my={3}
                     width="100%"
-                    maxWidth="91rem"
-                    px={['1.25rem', null, '5rem']}>
+                    maxWidth="101.5rem"
+                    px={['1.25rem', null, '2rem']}>
                     <Show above="lg">
                         <Img src="/assets/icons/aerolab-logo-1.svg" />
                     </Show>

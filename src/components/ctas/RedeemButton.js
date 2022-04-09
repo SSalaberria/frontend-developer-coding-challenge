@@ -4,7 +4,7 @@ import { formatNumber } from '../../utils';
 import { ImgIcon } from '../ImgIcon';
 
 export const RedeemButton = ({ value, balance, ...props }) => {
-    const disabled = useMemo(() => value >= balance, [balance, value]);
+    const disabled = useMemo(() => value > balance, [balance, value]);
 
     return (
         <Button

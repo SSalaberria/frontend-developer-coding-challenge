@@ -21,7 +21,8 @@ export const SelectableTag = ({ label, isSelected }) => {
                     !isSelected &&
                     'linear-gradient(102.47deg, brand.default.primary -5.34%, brand.default.secondary 106.58%)'
                 }
-                bgClip={!isSelected && 'text'}>
+                bgClip={!isSelected && 'text'}
+                transition="all .6s linear">
                 {label}
             </Text>
         </Tag>

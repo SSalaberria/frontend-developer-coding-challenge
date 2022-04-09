@@ -1,17 +1,19 @@
-import { Box, Text, useToast } from '@chakra-ui/react';
+import { Box, Skeleton, SkeletonText, Text, useToast } from '@chakra-ui/react';
 import Image from 'next/image';
 import { RedeemButton } from '../ctas/RedeemButton';
 import { memo, useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { balanceState } from '../../store/atoms';
 import { Toast } from '../feedback/Toast';
+import axios from '../../configs/axios';
 
 export const ProductCard = ({
-    id,
-    productName,
-    productImage,
-    productPrice,
+    _id,
+    name,
+    img,
+    cost,
     category,
+    loading = false,
 }) => {
     const [isRedeeming, setIsRedeeming] = useState(false);
     const [balance, setBalance] = useRecoilState(balanceState);
@@ -21,27 +23,56 @@ export const ProductCard = ({
         if (isRedeeming) return;
 
         setIsRedeeming(true);
-        setTimeout(() => {
-            setIsRedeeming(false);
-            setBalance(prevBalance => {
-                const validTransaction = prevBalance >= productPrice;
+
+        axios
+            .post('/redeem', { productId: _id })
+            .then(({ data }) => {
+                console.log(data);
+                setBalance(prevBalance => prevBalance - cost);
                 toast({
-                    title: productName,
                     render: props => (
                         <Toast
                             {...props}
-                            productName={productName}
+                            title={name}
+                            description="redeemed successfully"
+                        />
+                    ),
+                    duration: 9000,
+                });
+            })
+            .catch(e => {
+                toast({
+                    render: props => (
+                        <Toast
+                            {...props}
+                            error={true}
+                            description="There was a problem with the transaction"
+                        />
+                    ),
+                    duration: 9000,
+                });
+            })
+            .finally(() => {
+                setIsRedeeming(false);
+            });
+        /*
+        setTimeout(() => {
+            setIsRedeeming(false);
+            setBalance(prevBalance => {
+                const validTransaction = prevBalance >= cost;
+                toast({
+                    render: props => (
+                        <Toast
+                            {...props}
+                            title={name}
                             error={!validTransaction}
                         />
                     ),
                     duration: 9000,
-                    isClosable: true,
                 });
-                return validTransaction
-                    ? prevBalance - productPrice
-                    : prevBalance;
+                return validTransaction ? prevBalance - cost : prevBalance;
             });
-        }, 700);
+        }, 700);*/
     };
 
     return (
@@ -63,38 +94,69 @@ export const ProductCard = ({
                     borderBottomWidth="1px"
                     borderBottomStyle="solid"
                     borderBottomColor="gray.300">
-                    <Image
-                        src={productImage}
-                        layout="responsive"
-                        width={0}
-                        height={0}
-                        objectFit="scale-down"
-                    />
+                    {loading ? (
+                        'loading img'
+                    ) : (
+                        <Image
+                            src={img.url}
+                            layout="responsive"
+                            width={0}
+                            height={0}
+                            objectFit="scale-down"
+                        />
+                    )}
                 </Box>
                 <Box height={90} py={4} px={6}>
-                    <Text
-                        textStyle="text.l1"
-                        //color={useColorModeValue('gray.900', 'gray.900')}
-                        mb={1}
-                        color="gray.900">
-                        {productName}
-                    </Text>
-                    <Text
-                        textStyle="text.l2"
-                        variant="uppercase_secondary"
-                        //color={useColorModeValue('gray.600', 'gray.600')}
-                        color="gray.600">
-                        {category}
-                    </Text>
+                    {loading ? (
+                        <SkeletonText
+                            noOfLines={2}
+                            spacing={3}
+                            pt={2}
+                            pr={16}
+                            borderRadius={12}
+                            startColor="gray.200"
+                            endColor="gray.300"
+                            size={22}
+                        />
+                    ) : (
+                        <>
+                            <Text
+                                textStyle="text.l1"
+                                //color={useColorModeValue('gray.900', 'gray.900')}
+                                mb={1}
+                                color="gray.900">
+                                {name}
+                            </Text>
+                            <Text
+                                textStyle="text.l2"
+                                variant="uppercase_secondary"
+                                //color={useColorModeValue('gray.600', 'gray.600')}
+                                color="gray.600">
+                                {category}
+                            </Text>
+                        </>
+                    )}
                 </Box>
             </Box>
-            <RedeemButton
-                value={productPrice}
-                balance={balance}
-                onClick={handleRedeem}
-                isLoading={isRedeeming}
-                width="100%"
-            />
+            {loading ? (
+                <Skeleton
+                    background="gray.300"
+                    px={14}
+                    py={7}
+                    width="100%"
+                    borderRadius={16}
+                    startColor="gray.200"
+                    endColor="gray.300"
+                />
+            ) : (
+                <RedeemButton
+                    value={cost}
+                    balance={balance}
+                    onClick={handleRedeem}
+                    isLoading={isRedeeming}
+                    width="100%"
+                />
+            )}
         </Box>
     );
 };

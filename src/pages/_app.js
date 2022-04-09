@@ -1,7 +1,7 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react';
 import React from 'react';
 import globals from '../styles/globals.css';
-import theme from '../theme';
+import theme from '../configs/theme';
 import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
 import { RecoilRoot } from 'recoil';
 

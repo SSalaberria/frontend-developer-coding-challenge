@@ -1,7 +1,7 @@
 import { Box, Img, Text, useColorModeValue } from '@chakra-ui/react';
 import { ImgIcon } from '../ImgIcon';
 
-export const AeropayCard = ({}) => {
+export const AeropayCard = ({ name, createDate }) => {
     return (
         <Box
             display="flex"
@@ -27,30 +27,19 @@ export const AeropayCard = ({}) => {
                 height="100%"
                 backgroundImage="url('/assets/illustrations/single-wave-pattern.svg')"
                 backgroundRepeat="repeat-y"
-                backgroundSize="100% 12%"
-                _before={
-                    {
-                        // content: '""',
-                        // position: 'absolute',
-                        // width: '200%',
-                        // height: '200%',
-                        // top: '-50%',
-                        // left: '-50%',
-                        // zIndex: -1,
-                        // backgroundImage:
-                        //     "url('/assets/illustrations/single-wave-pattern.svg')",
-                        // backgroundRepeat: 'repeat-y',
-                        // transform: 'rotate(-6deg)',
-                        // backgroundSize: '100% 10%',
-                    }
-                }>
+                backgroundSize="100% 12%">
                 <Box
                     display="flex"
                     justifyContent="space-between"
                     px={4}
                     pb={4}>
-                    <Text textStyle="text.l2">John Kite</Text>
-                    <Text textStyle="text.l2">07/23</Text>
+                    <Text textStyle="text.l2">{name}</Text>
+                    <Text textStyle="text.l2">
+                        {new Intl.DateTimeFormat('en-US', {
+                            month: '2-digit',
+                            year: '2-digit',
+                        }).format(new Date(createDate))}
+                    </Text>
                 </Box>
             </Box>
         </Box>
