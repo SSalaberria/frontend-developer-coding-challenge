@@ -2,7 +2,7 @@
 
 # Deployment on Vercel
 
-[See the deployment here](#aerolab-challenge-ssalaberria.vercel.app)
+[**See the deployment here**](#aerolab-challenge-ssalaberria.vercel.app)
 
 # Aerolab Frontend Developer coding challenge
 
