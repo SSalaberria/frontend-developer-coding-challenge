@@ -1,4 +1,8 @@
-![Aerolab's Frontend Developer coding challenge](assets/github-cover-aerolab-frontend-developer-coding-challenge.png)
+![Aerolab's Frontend Developer coding challenge](public/assets/github-cover-aerolab-frontend-developer-coding-challenge.png)
+
+# Deployment on Vercel
+
+[See the deployment here](#aerolab-challenge-ssalaberria.vercel.app)
 
 # Aerolab Frontend Developer coding challenge
 
