@@ -1,4 +1,4 @@
-import { Box, Img, Text, useColorModeValue } from '@chakra-ui/react';
+import { Box, Img, Text } from '@chakra-ui/react';
 import Image from 'next/image';
 
 export const WalkthroughCard = ({ title, description, imgUrl }) => {
@@ -14,7 +14,7 @@ export const WalkthroughCard = ({ title, description, imgUrl }) => {
             borderColor="gray.300"
             borderRadius={32}
             boxShadow="0px 2px 40px rgba(0, 0, 0, 0.05)"
-            background={['rgba(255, 255, 255, 0.3)', 'gray.0']}
+            background={['rgba(255, 255, 255, 0.4)', null, null, 'gray.0']}
             zIndex={0}>
             <Box
                 display="flex"
@@ -43,7 +43,7 @@ export const WalkthroughCard = ({ title, description, imgUrl }) => {
                     />
                 </Box>
 
-                <Box py={4} pl={6} pr={[null, null, '20%']}>
+                <Box py={4} pl={6} pr={[null, null, null, '20%']}>
                     <Box display="flex" alignItems="center" mb={1}>
                         <Img
                             src="/assets/icons/walkthrough-1.svg"
