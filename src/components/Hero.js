@@ -105,7 +105,7 @@ export const Hero = ({}) => (
                         zIndex={1}
                         position="relative">
                         <Image
-                            src="/assets/illustrations/hero-desktop.png"
+                            src="/assets/illustrations/hero-desktop.webp"
                             layout="responsive"
                             width={0}
                             height={0}
@@ -124,7 +124,7 @@ export const Hero = ({}) => (
                         alignItems="center"
                         overflow="hidden">
                         <Image
-                            src="/assets/illustrations/hero-desktop.png"
+                            src="/assets/illustrations/hero-desktop.webp"
                             layout="fixed"
                             objectFit="cover"
                             width={600}
@@ -167,7 +167,7 @@ export const Hero = ({}) => (
                     <WalkthroughCard
                         title="1—BROWSE"
                         description="Browse our tech catalog with more than 20 top tech products"
-                        imgUrl="/assets/illustrations/walkthroug-1-desktop.png"
+                        imgUrl="/assets/illustrations/walkthroug-1-desktop.webp"
                     />
                 </Box>
                 <Box
@@ -177,7 +177,7 @@ export const Hero = ({}) => (
                     <WalkthroughCard
                         title="2—CHOOSE"
                         description="Exchange your hard earned AeroPoints for the item you want"
-                        imgUrl="/assets/illustrations/walkthroug-2-desktop.png"
+                        imgUrl="/assets/illustrations/walkthroug-2-desktop.webp"
                     />
                 </Box>
                 <Box
@@ -186,7 +186,7 @@ export const Hero = ({}) => (
                     <WalkthroughCard
                         title="3—ENJOY!"
                         description="All done, you can relax! We’ll take care of delivery of your tech item!"
-                        imgUrl="/assets/illustrations/walkthroug-3-desktop.png"
+                        imgUrl="/assets/illustrations/walkthroug-3-desktop.webp"
                     />
                 </Box>
             </Box>
