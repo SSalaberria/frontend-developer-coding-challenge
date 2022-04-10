@@ -1,6 +1,6 @@
 import { Box, Button, Text } from '@chakra-ui/react';
 import { useMemo } from 'react';
-import { formatNumber } from '../../utils';
+import { formatNumber } from '../../resources/utils';
 import { ImgIcon } from '../ImgIcon';
 
 export const RedeemButton = ({ value, balance, ...props }) => {

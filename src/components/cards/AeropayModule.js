@@ -17,7 +17,7 @@ import {
 } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
-import { formatNumber } from '../../utils';
+import { formatNumber } from '../../resources/utils';
 import { SelectableTag } from '../ctas/SelectableTag';
 import { ImgIcon } from '../ImgIcon';
 import { AeropayCard } from './AeropayCard';
