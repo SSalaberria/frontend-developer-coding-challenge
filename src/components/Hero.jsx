@@ -1,14 +1,15 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Box, Button, Show, Text, useColorModeValue } from '@chakra-ui/react';
 import Image from 'next/image';
-import { ImgIcon } from './ImgIcon';
-import { WalkthroughCard } from './cards/WalkthroughCard';
 import { memo } from 'react';
+import ImgIcon from './ImgIcon';
+import WalkthroughCard from './cards/WalkthroughCard';
 
-export const Hero = ({}) => (
+export const Hero = () => (
     <Box position="relative" width="100%" mt={[50, null]}>
         <Box
             position="absolute"
-            bottom={['5%', '15%']}
+            bottom={['5%', null, '15%']}
             height={['95%', null, '85%']}
             width="100%"
             zIndex={0}
@@ -16,8 +17,12 @@ export const Hero = ({}) => (
             sx={{
                 maskImage:
                     'url(/assets/illustrations/single-wave-pattern-background.svg)',
-                backgroundColor: [useColorModeValue('#E5F0FF', '#E5F0FF10')],
-                maskSize: ['56%', '18%'], //E5F0FF80
+                backgroundColor: [
+                    useColorModeValue('#d8e1ed', '#E5F0FF40'),
+                    null,
+                    useColorModeValue('#E5F0FF70', '#E5F0FF10'),
+                ],
+                maskSize: ['30%', '25%', '25%', '20%', '18%'],
             }}
         />
         <Box
@@ -44,10 +49,8 @@ export const Hero = ({}) => (
                 </Text>
                 <Text
                     textStyle="title.l1"
-                    bgGradient={
-                        'linear-gradient(102.47deg, brand.default.primary -5.34%, brand.default.secondary 106.58%)'
-                    }
-                    bgClip={'text'}>
+                    bgGradient="linear-gradient(102.47deg, brand.default.primary -5.34%, brand.default.secondary 106.58%)"
+                    bgClip="text">
                     TECH
                 </Text>
                 <Text textStyle="title.l1" pb={5}>
@@ -147,9 +150,7 @@ export const Hero = ({}) => (
                 top={['-25%', null, '-15%', '15%']}
                 height={['126%', null, null, '55%', null, '65%']}
                 width="100%"
-                bgGradient={
-                    'linear-gradient(102.47deg, specials.sectionBG.primary -5.34%, specials.sectionBG.secondary 106.58%)'
-                }
+                bgGradient="linear-gradient(102.47deg, specials.sectionBG.primary -5.34%, specials.sectionBG.secondary 106.58%)"
             />
 
             <Box

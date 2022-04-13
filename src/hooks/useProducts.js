@@ -2,7 +2,6 @@ import { useQuery } from 'react-query';
 import axios from '../configs/axios';
 
 const getProducts = async () => {
-    //const { data } = await axios.get('/api/products');
     const { data } = await axios.get('/products');
     return data;
 };

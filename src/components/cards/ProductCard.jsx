@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types';
 import { Box, Skeleton, SkeletonText, Text, useToast } from '@chakra-ui/react';
 import Image from 'next/image';
-import { RedeemButton } from '../ctas/RedeemButton';
 import { memo, useState } from 'react';
 import { useRecoilState } from 'recoil';
+import RedeemButton from '../ctas/RedeemButton';
 import { balanceState } from '../../store/atoms';
-import { Toast } from '../feedback/Toast';
+import Toast from '../feedback/Toast';
 import axios from '../../configs/axios';
 
 export const ProductCard = ({
@@ -19,34 +20,33 @@ export const ProductCard = ({
     const [balance, setBalance] = useRecoilState(balanceState);
     const toast = useToast();
 
-    const handleRedeem = ({}) => {
+    const handleRedeem = () => {
         if (isRedeeming) return;
 
         setIsRedeeming(true);
 
         axios
             .post('/redeem', { productId: _id })
-            .then(({ data }) => {
-                console.log(data);
+            .then(() => {
                 setBalance(prevBalance => prevBalance - cost);
                 toast({
                     render: props => (
                         <Toast
-                            {...props}
                             title={name}
                             description="redeemed successfully"
+                            {...props}
                         />
                     ),
                     duration: 9000,
                 });
             })
-            .catch(e => {
+            .catch(() => {
                 toast({
                     render: props => (
                         <Toast
-                            {...props}
-                            error={true}
+                            error
                             description="There was a problem with the transaction"
+                            {...props}
                         />
                     ),
                     duration: 9000,
@@ -55,24 +55,6 @@ export const ProductCard = ({
             .finally(() => {
                 setIsRedeeming(false);
             });
-        /*
-        setTimeout(() => {
-            setIsRedeeming(false);
-            setBalance(prevBalance => {
-                const validTransaction = prevBalance >= cost;
-                toast({
-                    render: props => (
-                        <Toast
-                            {...props}
-                            title={name}
-                            error={!validTransaction}
-                        />
-                    ),
-                    duration: 9000,
-                });
-                return validTransaction ? prevBalance - cost : prevBalance;
-            });
-        }, 700);*/
     };
 
     return (
@@ -120,17 +102,12 @@ export const ProductCard = ({
                         />
                     ) : (
                         <>
-                            <Text
-                                textStyle="text.l1"
-                                //color={useColorModeValue('gray.900', 'gray.900')}
-                                mb={1}
-                                color="gray.900">
+                            <Text textStyle="text.l1" mb={1} color="gray.900">
                                 {name}
                             </Text>
                             <Text
                                 textStyle="text.l2"
                                 variant="uppercase_secondary"
-                                //color={useColorModeValue('gray.600', 'gray.600')}
                                 color="gray.600">
                                 {category}
                             </Text>
@@ -159,6 +136,19 @@ export const ProductCard = ({
             )}
         </Box>
     );
+};
+
+ProductCard.defaultProps = {
+    loading: false,
+};
+
+ProductCard.propTypes = {
+    _id: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    img: PropTypes.object.isRequired,
+    cost: PropTypes.number.isRequired,
+    category: PropTypes.string.isRequired,
+    loading: PropTypes.bool,
 };
 
 export const MemoizedCard = memo(ProductCard);

@@ -1,8 +1,8 @@
 import { Box, HStack, Img, Text, VStack } from '@chakra-ui/react';
-import { NavLink } from '../../ctas/NavLink';
 import Image from 'next/image';
+import { NavLink } from '../../ctas/NavLink';
 
-export const Footer = props => (
+const Footer = props => (
     <VStack as="footer" py="6rem" mt={60} gap={5} {...props}>
         <HStack gap={5}>
             <Img w={10} src="/assets/icons/react.svg" />
@@ -28,9 +28,7 @@ export const Footer = props => (
                     height={0}
                 />
             }
-            href={
-                'https://github.com/SSalaberria/frontend-developer-coding-challenge'
-            }
+            href="https://github.com/SSalaberria/frontend-developer-coding-challenge"
             isExternal
         />
         <Box textAlign="center">
@@ -43,3 +41,5 @@ export const Footer = props => (
         </Box>
     </VStack>
 );
+
+export default Footer;

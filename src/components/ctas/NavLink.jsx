@@ -1,4 +1,4 @@
-import { LinkIcon } from '@chakra-ui/icons';
+import PropTypes from 'prop-types';
 import { Box, Link, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 
@@ -28,3 +28,11 @@ export const NavLink = ({ icon, iconHovered, label, ...props }) => {
         </Link>
     );
 };
+
+NavLink.propTypes = {
+    icon: PropTypes.node.isRequired,
+    iconHovered: PropTypes.bool.isRequired,
+    label: PropTypes.string.isRequired,
+};
+
+export default NavLink;

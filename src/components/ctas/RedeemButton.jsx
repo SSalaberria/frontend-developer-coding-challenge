@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import { Box, Button, Text } from '@chakra-ui/react';
 import { useMemo } from 'react';
 import { formatNumber } from '../../resources/utils';
-import { ImgIcon } from '../ImgIcon';
+import ImgIcon from '../ImgIcon';
 
-export const RedeemButton = ({ value, balance, ...props }) => {
+const RedeemButton = ({ value, balance, ...props }) => {
     const disabled = useMemo(() => value > balance, [balance, value]);
 
     return (
@@ -46,3 +47,10 @@ export const RedeemButton = ({ value, balance, ...props }) => {
         </Button>
     );
 };
+
+RedeemButton.propTypes = {
+    value: PropTypes.number.isRequired,
+    balance: PropTypes.number.isRequired,
+};
+
+export default RedeemButton;

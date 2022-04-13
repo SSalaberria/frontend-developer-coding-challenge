@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Box, Flex, Text } from '@chakra-ui/react';
 import { SelectableTag } from '../ctas/SelectableTag';
 
@@ -7,7 +8,7 @@ const sortOptions = [
     { label: 'Highest price', value: 'highest' },
 ];
 
-export const SortOptions = ({ selectedSortOption, onSelect }) => (
+const SortOptions = ({ selectedSortOption, onSelect }) => (
     <Flex alignItems="center" gap={4}>
         <Text
             textStyle="text.l1"
@@ -17,8 +18,8 @@ export const SortOptions = ({ selectedSortOption, onSelect }) => (
             Sort by:
         </Text>
         <Flex gap={3}>
-            {sortOptions.map((option, index) => (
-                <Box key={index} onClick={() => onSelect(option.value)}>
+            {sortOptions.map(option => (
+                <Box key={option} onClick={() => onSelect(option.value)}>
                     <SelectableTag
                         label={option.label}
                         isSelected={selectedSortOption === option.value}
@@ -28,3 +29,10 @@ export const SortOptions = ({ selectedSortOption, onSelect }) => (
         </Flex>
     </Flex>
 );
+
+SortOptions.propTypes = {
+    selectedSortOption: PropTypes.string.isRequired,
+    onSelect: PropTypes.func.isRequired,
+};
+
+export default SortOptions;

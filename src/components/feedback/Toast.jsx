@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import { CloseIcon } from '@chakra-ui/icons';
 import { Flex, IconButton, Text, useColorModeValue } from '@chakra-ui/react';
-import { ImgIcon } from '../ImgIcon';
+import ImgIcon from '../ImgIcon';
 
-export const Toast = ({ id, onClose, title, error, description, ...props }) => (
+const Toast = ({ onClose, title, error, description, ...props }) => (
     <Flex
         alignItems="center"
         background={useColorModeValue('gray.0', 'gray.900')}
@@ -40,3 +41,17 @@ export const Toast = ({ id, onClose, title, error, description, ...props }) => (
         />
     </Flex>
 );
+
+Toast.defaultProps = {
+    error: false,
+    description: '',
+};
+
+Toast.propTypes = {
+    onClose: PropTypes.func.isRequired,
+    title: PropTypes.string.isRequired,
+    error: PropTypes.bool,
+    description: PropTypes.string,
+};
+
+export default Toast;

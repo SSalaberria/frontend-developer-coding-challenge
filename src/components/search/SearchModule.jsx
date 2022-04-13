@@ -1,17 +1,17 @@
-import { Divider, Flex, SimpleGrid, Text } from '@chakra-ui/react';
+/* eslint-disable no-underscore-dangle */
+import { Divider, Flex, SimpleGrid, Skeleton, Text } from '@chakra-ui/react';
 import { useEffect, useMemo, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 import useProducts from '../../hooks/useProducts';
 import { MemoizedCard as ProductCard } from '../cards/ProductCard';
 import { Pagination } from '../ctas/Pagination';
-import { FilterOptionsSelect } from './FilterOptionsSelect';
-import { SortOptions } from './SortOptions';
+import FilterOptionsSelect from './FilterOptionsSelect';
+import SortOptions from './SortOptions';
 import { balanceState } from '../../store/atoms';
-import useHistory from '../../hooks/useHistory';
 
 const productsPerPage = 12;
 
-export const SearchModule = ({}) => {
+const SearchModule = () => {
     const products = useProducts();
     const [filter, setFilter] = useState('All products');
     const [sort, setSort] = useState('newest');
@@ -27,14 +27,6 @@ export const SearchModule = ({}) => {
             products?.data?.map(product => product.category),
         );
         return ['All products', ...categories];
-        /*
-        return [
-            { label: 'All products', value: 'ALL' },
-            ...[...categories].map(category => ({
-                label: category.toLowerCase(),
-                value: category,
-            })),
-        ];*/
     }, [products.data]);
 
     useEffect(() => setPage(1), [filter, sort]);
@@ -47,7 +39,7 @@ export const SearchModule = ({}) => {
         }
         switch (sort) {
             case 'newest': {
-                //prods = prods.sort((a, b) => b.timestamp - a.timestamp);
+                prods = prods.sort((a, b) => a.cost - b.cost);
                 break;
             }
             case 'lowest': {
@@ -56,6 +48,9 @@ export const SearchModule = ({}) => {
             }
             case 'highest': {
                 prods = prods.sort((a, b) => b.cost - a.cost);
+                break;
+            }
+            default: {
                 break;
             }
         }
@@ -119,10 +114,10 @@ export const SearchModule = ({}) => {
             <SimpleGrid minChildWidth="320px" spacing={5} spacingY={20}>
                 {filteredProducts
                     .slice((page - 1) * productsPerPage, page * productsPerPage)
-                    .map((product, index) => (
+                    .map(product => (
                         <ProductCard
                             {...product}
-                            key={index}
+                            key={product._id}
                             balance={balance}
                             loading={products.isLoading}
                         />
@@ -136,7 +131,7 @@ export const SearchModule = ({}) => {
                 width={['auto', null, null, null, '56%']}
                 justifyContent={['center', null, null, null, 'space-between']}>
                 {products.isLoading ? (
-                    <></>
+                    <Skeleton />
                 ) : (
                     <>
                         <Pagination
@@ -164,3 +159,5 @@ export const SearchModule = ({}) => {
         </Flex>
     );
 };
+
+export default SearchModule;

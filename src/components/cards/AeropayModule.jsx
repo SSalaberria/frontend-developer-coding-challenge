@@ -2,7 +2,6 @@ import { ChevronDownIcon } from '@chakra-ui/icons';
 import {
     Box,
     Button,
-    Img,
     Popover,
     PopoverBody,
     PopoverContent,
@@ -19,16 +18,16 @@ import { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
 import { formatNumber } from '../../resources/utils';
 import { SelectableTag } from '../ctas/SelectableTag';
-import { ImgIcon } from '../ImgIcon';
-import { AeropayCard } from './AeropayCard';
+import ImgIcon from '../ImgIcon';
+import AeropayCard from './AeropayCard';
 import { balanceState } from '../../store/atoms';
 import useUser from '../../hooks/useUser';
 import axios from '../../configs/axios';
-import { Toast } from '../feedback/Toast';
+import Toast from '../feedback/Toast';
 
 const chargingValues = [1000, 5000, 7500];
 
-export const AeropayModule = ({}) => {
+const AeropayModule = () => {
     const theme = useTheme();
     const user = useUser();
     const toast = useToast();
@@ -48,22 +47,22 @@ export const AeropayModule = ({}) => {
                 toast({
                     render: props => (
                         <Toast
-                            {...props}
                             title="Points added"
                             description="Succesfully added points."
+                            {...props}
                         />
                     ),
                     duration: 9000,
                 });
                 setBalance(data['New Points']);
             })
-            .catch(e => {
+            .catch(() => {
                 toast({
                     render: props => (
                         <Toast
-                            {...props}
-                            error={true}
+                            error
                             description="There was a problem with the transaction."
+                            {...props}
                         />
                     ),
                     duration: 9000,
@@ -74,7 +73,7 @@ export const AeropayModule = ({}) => {
 
     return (
         <Popover placement="bottom">
-            {({ isOpen, onClose }) => (
+            {({ isOpen }) => (
                 <>
                     <PopoverTrigger>
                         <Button
@@ -104,10 +103,8 @@ export const AeropayModule = ({}) => {
                                     minWidth={50}
                                     textStyle="text.l1"
                                     mr={2}
-                                    bgGradient={
-                                        'linear-gradient(102.47deg, brand.default.primary -5.34%, brand.default.secondary 106.58%)'
-                                    }
-                                    bgClip={'text'}>
+                                    bgGradient="linear-gradient(102.47deg, brand.default.primary -5.34%, brand.default.secondary 106.58%)"
+                                    bgClip="text">
                                     {formatNumber(balance)}
                                 </Text>
                             )}
@@ -164,9 +161,9 @@ export const AeropayModule = ({}) => {
                                     justifyContent="space-around"
                                     my={5}
                                     width="100%">
-                                    {chargingValues.map((value, index) => (
+                                    {chargingValues.map(value => (
                                         <Box
-                                            key={index}
+                                            key={value}
                                             onClick={() =>
                                                 setSelectedValue(value)
                                             }>
@@ -198,3 +195,5 @@ export const AeropayModule = ({}) => {
         </Popover>
     );
 };
+
+export default AeropayModule;
