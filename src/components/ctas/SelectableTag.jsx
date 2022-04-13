@@ -29,7 +29,7 @@ export const SelectableTag = ({ label, isSelected }) => (
 );
 
 SelectableTag.propTypes = {
-    label: PropTypes.string.isRequired,
+    label: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     isSelected: PropTypes.bool.isRequired,
 };
 

@@ -112,7 +112,6 @@ export const Hero = () => (
                             layout="responsive"
                             width={0}
                             height={0}
-                            zIndex={3}
                             objectFit="scale-down"
                             priority
                         />

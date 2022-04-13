@@ -19,7 +19,7 @@ const SortOptions = ({ selectedSortOption, onSelect }) => (
         </Text>
         <Flex gap={3}>
             {sortOptions.map(option => (
-                <Box key={option} onClick={() => onSelect(option.value)}>
+                <Box key={option.value} onClick={() => onSelect(option.value)}>
                     <SelectableTag
                         label={option.label}
                         isSelected={selectedSortOption === option.value}

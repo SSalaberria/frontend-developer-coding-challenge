@@ -31,7 +31,7 @@ export const NavLink = ({ icon, iconHovered, label, ...props }) => {
 
 NavLink.propTypes = {
     icon: PropTypes.node.isRequired,
-    iconHovered: PropTypes.bool.isRequired,
+    iconHovered: PropTypes.node.isRequired,
     label: PropTypes.string.isRequired,
 };
 
