@@ -134,6 +134,8 @@ const theme = extendTheme({
             },
         },
     },
+    initialColorMode: 'light',
+    useSystemColorMode: false,
     fonts,
     breakpoints,
 });
