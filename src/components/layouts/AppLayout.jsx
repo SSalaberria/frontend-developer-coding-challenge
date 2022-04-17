@@ -22,7 +22,7 @@ export const AppLayout = ({ title, hero, children }) => (
                 my={3}
                 width="100%"
                 maxWidth="101.5rem"
-                px={['1.25rem', null, '2rem']}>
+                px={['1.25rem', null]}>
                 <Show above="lg">
                     <Img src="/assets/icons/aerolab-logo-1.svg" />
                 </Show>
